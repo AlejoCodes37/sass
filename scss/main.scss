@@ -1,0 +1,345 @@
+$fuente_primaria: 'Russo One', sans-serif;
+$fondo: radial-gradient(circle at -11.24% 14.64%, #003654 0, #003559 5%, #00345e 10%, #003361 15%, #003164 20%, #002f65 25%, #002d65 30%, #002a63 35%, #0a2761 40%, #23235e 45%, #321f59 50%, #3d1a54 55%, #46154d 60%, #4d0f47 65%, #53093f 70%, #570438 75%, #5a0130 80%, #5b0028 85%, #5c0120 90%, #5b0419 95%, #590911 100%);
+$btn_color1: rgb(131, 0, 148);
+$btn_color2: rgb(255, 255, 255);
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: $fondo;
+}
+
+header {
+    width: 100%;
+    height: 6vh;
+    background-image: $fondo;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+
+        li {
+            margin: 15px;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+                font-family: $fuente_primaria;
+                text-transform: uppercase;
+                font-weight: 100;
+
+                .active,
+                :hover {
+                    color: rgb(108, 8, 248);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .logo {
+        margin-top: 7px;
+        margin-left: 30px;
+        font-size: 30px;
+        background: #fff;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $fuente_primaria;
+    }
+}
+
+#toggle,
+nav label {
+    display: none;
+}
+
+.titulo {
+
+    width: 100%;
+    height: 50vh;
+
+    background: url(../img/fondo_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner-text {
+
+        text-align: center;
+        color: #fff;
+
+        h1 {
+            padding-top: 150px;
+            font-size: 60px;
+            margin-bottom: 30px;
+            font-family: $fuente_primaria;
+
+        }
+
+        span {
+            color: rgb(100, 12, 144);
+            text-shadow: 0 10px 10px black;
+            font-family: $fuente_primaria;
+        }
+
+        .button1 {
+            margin-right: 5px;
+            padding: 10px 30px;
+            background-color: $btn_color1;
+            color: $btn_color2;
+            border-radius: 5px;
+            font-family: $fuente_primaria;
+        }
+
+        .button1:hover {
+            background-color: $btn_color2;
+            color: $btn_color1;
+            transition: .5s;
+        }
+    }
+}
+
+.nosotros_container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 40% 60%;
+    background: url(../img/nosotros2.jpg);
+    background-size: cover;
+
+    .nosotros_img img {
+        width: 50%;
+        margin: 50px;
+        margin-left: 260px;
+    }
+
+    .nosotros_texto {
+        display: block;
+        height: 22vh;
+        margin-right: 75px;
+        background-color: rgba(0, 0, 0, 0.394);
+
+        h1 {
+            color: rgb(137, 3, 255);
+            text-shadow: 0 10px 10px black;
+            font-size: 45px;
+            margin: 20px;
+            font-family: $fuente_primaria;
+        }
+
+        p {
+            color: #fff;
+            font-size: 15px;
+            text-align: left;
+            margin-bottom: 20px;
+            margin: 20px;
+            font-family: $fuente_primaria;
+        }
+
+        .button2 {
+            margin-right: 5px;
+            padding: 10px 30px;
+            background-color: $btn_color2;
+            color: $btn_color1;
+            border-radius: 5px;
+            margin: 20px;
+            font-family: $fuente_primaria;
+        }
+
+        .button2:hover {
+            background-color: $btn_color1;
+            color: $btn_color2;
+            transition: .5s;
+        }
+    }
+
+
+}
+
+.categorias {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+
+    h1 {
+
+        margin-top: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 80px;
+        text-shadow: 0 10px 10px black;
+        font-family: $fuente_primaria;
+    }
+
+    .container_cards {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            width: 330px;
+            height: 430px;
+            background: rgb(140, 0, 255);
+            border-radius: 8px;
+            box-shadow: 0 5px 6px rgba(174, 0, 255, 0.504);
+            overflow: hidden;
+            margin: 70px;
+            text-align: center;
+            transition: all 0.25s;
+
+            
+
+            img {
+                width: 330px;
+                height: 220px;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-family: $fuente_primaria;
+            }
+
+            p {
+                color: #fff;
+                padding: 0 1rem;
+                font-size: 16px;
+                font-weight: 300;
+                padding-bottom: 20px;
+                font-family: $fuente_primaria;
+            }
+
+            a {
+                font-weight: 500;
+                text-decoration: none;
+                font-family: $fuente_primaria;
+            }
+
+            .button2 {
+                margin-right: 5px;
+                padding: 10px 30px;
+                background-color: $btn_color2;
+                color: $btn_color1;
+                border-radius: 5px;
+                margin: 20px;
+                font-family: $fuente_primaria;
+            }
+
+            .button2:hover {
+                background-color: $btn_color1;
+                color: $btn_color2;
+                transition: .5s;
+            }
+
+        }
+
+        .card:hover{
+                transform: translateY(-15px);
+                box-shadow: 0 5px 6px rgba(174, 0, 255, 0.504);  
+        }
+        
+
+    }
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.486) ;
+    background-image: radial-gradient(circle at -11.24% 14.64%, #003654 0, #003559 5%, #00345e 10%, #003361 15%, #003164 20%, #002f65 25%, #002d65 30%, #002a63 35%, #0a2761 40%, #23235e 45%, #321f59 50%, #3d1a54 55%, #46154d 60%, #4d0f47 65%, #53093f 70%, #570438 75%, #5a0130 80%, #5b0028 85%, #5c0120 90%, #5b0419 95%, #590911 100%);
+    height: 100px;
+    bottom: 0;
+    display: grid;
+    .icons {
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10%;
+        align-items: center;
+        margin-left: 690px;
+        padding: 20px;
+        .icon {
+            width: 60px;
+            height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 26px;
+            color: white;
+            border-radius: 50%;
+            outline: 2px solid #fff;
+            transition-property:
+                outline-offset, outline-color,
+                background-color;
+            transition-duration: .25s;
+
+            :hover {
+                outline-offset: 4px;
+                i {
+                    animation: shake .25s;
+                }
+            }
+
+             
+        }
+
+        .icon--instagram:hover {
+            background-image: radial-gradient(circle at 30% 107%,
+                    #fdf497 0%, #fdf497 5%,
+                    #fd5949 45%, #d6249f 60%,
+                    #285AEB 90%);
+            outline-color: #a02d76;
+        }
+        
+        .icon--twitter:hover {
+            background-color: #1da1f2;
+            outline-color: #1da1f2;
+        }
+        
+        .icon--linkedin:hover {
+            background-color: #0077b5;
+            outline-color: #0077b5;
+        }
+        
+        .icon--github:hover {
+            background-color: #2ea44f;
+            outline-color: #2ea44f;
+        }
+        
+        
+    }
+    
+}
+
+@keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
