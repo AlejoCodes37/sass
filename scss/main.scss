@@ -24,7 +24,7 @@ header {
     z-index: 10;
 }
 
-nav {
+@mixin nav {
     display: grid;
     grid-template-columns: auto auto;
 
@@ -173,9 +173,7 @@ nav label {
 }
 
 .categorias {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto auto;
+    @include nav;
 
     h1 {
 
